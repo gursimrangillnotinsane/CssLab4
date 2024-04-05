@@ -1,0 +1,34 @@
+table {
+    border-collapse: collapse;
+    width: 100%;
+    table-layout: auto;
+}
+
+th {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+caption {
+    font-size: 150%;
+}
+
+colgroup col:nth-child(odd) {
+    background-color: rgb(138, 151, 163);
+}
+
+colgroup+colgroup col:nth-child(odd) {
+    background-color: rgba(78, 84, 90, 0.36);
+}
+
+colgroup+colgroup col:nth-child(even) {
+    background-color: rgba(142, 152, 161, 0.36);
+}
+
+th,
+td {
+    border: 1px solid black;
+    text-align: center;
+    padding: 8px;
+    word-break: keep-all;
+}
